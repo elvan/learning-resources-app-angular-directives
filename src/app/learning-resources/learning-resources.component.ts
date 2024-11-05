@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import { LogDirective } from '../log.directive';
 import { SafeLinkDirective } from '../safe-link.directive';
 
 @Component({
@@ -7,6 +8,6 @@ import { SafeLinkDirective } from '../safe-link.directive';
   templateUrl: './learning-resources.component.html',
   styleUrl: './learning-resources.component.css',
   standalone: true,
-  imports: [SafeLinkDirective],
+  imports: [SafeLinkDirective, LogDirective],
 })
 export class LearningResourcesComponent {}
